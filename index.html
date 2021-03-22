@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript"> 
+var totalCount = 8;
+function ChangeIt() 
+{
+var num = Math.ceil( Math.random() * totalCount );
+document.body.background = 'gifs/'+num+'.gif';
+document.body.style.backgroundRepeat = "no-repeat";// Background repeat
+}
+</script>
+</head>
+<body> 
+
+			<!-- <div id="header-txt">
+				<div>
+					<h1>100%</h1>
+					
+				</div>
+			</div>
+			
+			<style>
+			#header-txt {
+			height: 100vh;
+			width: 100%;
+			background-color: rgba(0,0,0,0.5);
+			padding-left: 30%;
+			
+			position: center;
+
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			
+			top: 0;
+			left: 0;
+			/* padding: 10px; */
+			height: 100%;
+			</style>
+			-->
+</body> 
+<script type="text/javascript"> 
+ChangeIt();
+</script> 
+</html>
