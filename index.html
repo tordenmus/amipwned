@@ -2,24 +2,37 @@
 <head>
 <link rel="stylesheet" href="style.css">
 <script type="text/javascript"> 
-var totalCount = 8;
+var totalCount = 14;
 function ChangeIt() 
 {
 var num = Math.ceil( Math.random() * totalCount );
 document.body.background = 'gifs/'+num+'.gif';
 document.body.style.backgroundRepeat = "no-repeat";// Background repeat
+document.body.style.backgroundSize = "cover";
 }
+
+  function appHeight() {
+    const doc = document.documentElement
+    doc.style.setProperty('--vh', (window.innerHeight*.01) + 'px');
+  }
+
+  window.addEventListener('resize', appHeight);
+  appHeight();
+  
+  
+  
+    function appWidth() {
+    const doc = document.documentElement
+    doc.style.setProperty('--vw', (window.innerWidth*.01) + 'px');
+  }
+
+  window.addEventListener('resize', appWidth);
+  appWidth();
 </script>
 </head>
 <body> 
 
-			<!-- <div id="header-txt">
-				<div>
-					<h1>100%</h1>
-					
-				</div>
-			</div>
-			
+			<!-- 
 			<style>
 			#header-txt {
 			height: 100vh;
