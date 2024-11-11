@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="verkassi is a one-page dashboard of simple tools. No ads, no tracking, no signup, no BS.">
-    <meta name="keywords" content="calculator, complementary color, table converter, date difference, comma to line break, lorem ipsum, random number, word count, character count">
+    <meta name="keywords" content="remove duplicates, complementary color, table converter, date difference, comma to line break, lorem ipsum, random number, word count, character count">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>verkassi</title>
@@ -137,10 +137,8 @@ input:checked + .slider:before {
           width: 33.33%;
         }
       }
-    </style>
-  
-    <style>
-      /* Dark mode styling for text input areas only */
+	  
+	        /* Dark mode styling for text input areas only */
       .dark-mode textarea,
       .dark-mode input[type="text"],
       .dark-mode input[type="number"],
@@ -148,13 +146,10 @@ input:checked + .slider:before {
         background-color: #333;
         color: white;
       }
-    </style>
-
-
-<style>
+ 
   /* Dark mode styling for specific areas and components */
   .dark-mode textarea,
-  .dark-mode .AClabel, 
+   
   .dark-mode input[type="text"],
   .dark-mode input[type="number"],
   .dark-mode input[type="date"],
@@ -162,6 +157,12 @@ input:checked + .slider:before {
     background-color: #333;
     color: #fff;
   }
+
+.dark-mode .AClabel, 
+.dark-mode select {
+  background-color: #444;
+  color: white;
+}
   .dark-mode .calculator,
   .dark-mode .area-calculator {
     background-color: #444; /* Darker background for calculators */
@@ -221,23 +222,20 @@ input:checked + .slider:before {
   <body>
     <div class="header-bar">
       <h1 class="fancy">verkassi</h1>
-      <img src="iceland.png" width="32">
+      <img src="iceland.png" alt="Iceland flag" width="32">
       <br>/vɛr̥k/ & /ˈkʰasːɪ/ <br>("toolbox") <h3>No ads, no tracking, no signup, no BS.<br>DARK MODE 
 <i class="fa-solid fa-moon"></i>
 
 <label class="switch">
   <input type="checkbox">
   <span class="slider round"></span>
-</label></h2>
+</label></h3>
     </div>
     <div class="row">
       <div class="column">
         <!-- Tile 1: Insert HTML content here -->
         <div class="tile">
-          <!DOCTYPE html>
-          <html>
-            <head>
-              <title>verkassi</title>
+         
               <style>
                 body {
                   background-color: #02529C;
@@ -378,16 +376,13 @@ input:checked + .slider:before {
                 }
               </script>
             </body>
-          </html>
+          
         </div>
       </div>
       <div class="column">
         <!-- Tile 2: Insert HTML content here -->
         <div class="tile">
-          <!DOCTYPE html>
-          <html>
-            <head>
-              <title>Calculator</title>
+         
               <style>
                 body {
                   background-color: #02529C;
@@ -530,16 +525,13 @@ input:checked + .slider:before {
                 }
               </script>
             </body>
-          </html>
+          
         </div>
       </div>
       <div class="column">
         <!-- Tile 3: Insert HTML content here -->
         <div class="tile">
-          <!DOCTYPE html>
-          <html>
-            <head>
-              <title>Comma to Line Break Converter</title>
+          
               <style>
                 body {
                   background-color: #02529C;
@@ -643,16 +635,13 @@ input:checked + .slider:before {
                 });
               </script>
             </body>
-          </html>
+          
         </div>
       </div>
       <div class="column">
         <!-- Tile 7: Insert HTML content here -->
         <div class="tile">
-          <!DOCTYPE html>
-          <html>
-            <head>
-              <title>Color Picker</title>
+          
               <style>
                 body {
                   background-color: #02529C;
@@ -796,16 +785,13 @@ input:checked + .slider:before {
                 }
               </script>
             </body>
-          </html>
+          
         </div>
       </div>
       <div class="column">
         <!-- Tile 4: Insert HTML content here -->
         <div class="tile">
-          <!DOCTYPE html>
-          <html>
-            <head>
-              <title>Converter (Lengths)</title>
+         
               <style>
                 body {
                   background-color: #02529C;
@@ -863,7 +849,7 @@ input:checked + .slider:before {
               <h1>Converter (Lengths)</h1>
               <label for="inputValue">Value to Convert:</label>
               <input type="number" id="inputValue" />
-              <br />
+              <br>
               <label for="fromUnit">From Unit:</label>
               <select id="fromUnit">
                 <option value="inch">Inch (in)</option>
@@ -875,7 +861,7 @@ input:checked + .slider:before {
                 <option value="km">Kilometer (km)</option>
                 <option value="mile">Mile (mi)</option>
               </select>
-              <br />
+              <br>
               <label for="toUnit">To Unit:</label>
               <select id="toUnit">
                 <option value="inch">Inch (in)</option>
@@ -887,9 +873,9 @@ input:checked + .slider:before {
                 <option value="km">Kilometer (km)</option>
                 <option value="mile">Mile (mi)</option>
               </select>
-              <br />
+              <br>
               <button id="convertBtn" onclick="convert()">Convert</button>
-              <br />
+              <br>
               <label id="converter_result" style="color:white;"></label>
               <script>
 // Conversion table
@@ -986,17 +972,13 @@ function convert() {
 
               </script>
             </body>
-          </html>
+          
         </div>
       </div>
       <div class="column">
         <!-- Tile 5: Insert HTML content here -->
         <div class="tile">
-         <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Date Difference Calculator</title>
+        
     <style>
       body {
         background-color: #02529C;
@@ -1082,7 +1064,7 @@ function convert() {
       }
     </script>
   </body>
-</html>
+
 
         </div>
       </div>
@@ -1092,12 +1074,7 @@ function convert() {
 <!-- Tile 6: Insert HTML content here -->
 <div class="tile">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Duplicate Remover</title>
+
   <style>
       body {
         background-color: #02529C;
@@ -1186,7 +1163,7 @@ function convert() {
   </script>
 
 </body>
-</html>
+
 
         </div>
       </div>
@@ -1197,10 +1174,7 @@ function convert() {
 
       <!-- Tile 6b: Insert HTML content here -->
       <div class="tile">
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <title>Lorem Ipsum Generator</title>
+       
             <style>
               body {
                 background-color: #02529C;
@@ -1278,17 +1252,14 @@ function convert() {
               });
             </script>
           </body>
-        </html>
+        
       </div>
     </div>
     </div>
     <div class="column">
       <!-- Tile 8: Insert HTML content here -->
       <div class="tile">
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <title>QR Code Generator</title>
+       
             <style>
               body {
                 background-color: #02529C;
@@ -1383,17 +1354,14 @@ function convert() {
               }
             </script>
           </body>
-        </html>
+        
       </div>
     </div>
 
  <div class="column">
       <!-- Tile 9: Insert HTML content here -->
       <div class="tile">
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <title>Random Number Generator</title>
+      
             <style>
               body {
                 background-color: #02529C;
@@ -1462,17 +1430,14 @@ function convert() {
               }
             </script>
           </body>
-        </html>
+        
       </div>
     </div>
 
     <div class="column">
       <!-- Tile 10: Insert HTML content here -->
       <div class="tile">
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <title>Random Value Selector</title>
+      
             <style>
               body {
                 background-color: #02529C;
@@ -1570,7 +1535,7 @@ function convert() {
               });
             </script>
           </body>
-        </html>
+        
       </div>
     </div>
     </div>
@@ -1580,10 +1545,7 @@ function convert() {
     <div class="column">
       <!-- Tile 11: Insert HTML content here -->
       <div class="tile">
-       <!DOCTYPE html>
-<html>
-  <head>
-    <title>Spreadsheet to HTML Table Converter</title>
+     
     <style>
       body {
         background-color: #02529C;
@@ -1683,17 +1645,14 @@ function convert() {
       });
     </script>
   </body>
-</html>
+
 
       </div>
     </div>
     <div class="column">
       <!-- Tile 12:Insert HTML content here -->
       <div class="tile">
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <title>Character and Word Count</title>
+      
             <style>
               body {
                 background-color: #02529C;
@@ -1766,7 +1725,7 @@ function convert() {
             <p id="char-count"></p>
             <p id="word-count"></p>
           </body>
-        </html>
+        
       </div>
     </div>
     </div><div class="row">
@@ -1781,5 +1740,5 @@ function convert() {
 <a href="http://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=hxnxocx&nd=6&style=16" border="0" alt="visitor counter"></a>
 <!-- End of CuterCounter Code -->
 </a>
-
 </html>
+
