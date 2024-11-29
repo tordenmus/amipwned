@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="verkassi is a one-page dashboard of simple tools. No ads, no tracking, no signup, no BS.">
-    <meta name="keywords" content="remove duplicates, complementary color, table converter, date difference, comma to line break, lorem ipsum, random number, word count, character count">
+    <meta name="description" content="verkassi is a one-page dashboard of simple tools. No ads, no tracking, no signup, no BS. You can also generate small or large amounts of pseudodata with DataSmith!">
+    <meta name="keywords" content="remove duplicates, complementary color, table converter, date difference, comma to line break, lorem ipsum, random number, word count, character count, toolkit, utilities, pseudodata, synthetic data">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>verkassi</title>
@@ -20,6 +20,7 @@
   display: inline-block;
   width: 60px;
   height: 34px;
+  margin-top: 10px;
 }
 
 .switch input { 
@@ -38,6 +39,7 @@
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
+ 
 }
 
 .slider:before {
@@ -73,20 +75,31 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f186";
+  font-size: 18px; 
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* remainder */
       body {
         background-color: #02529C;
-        padding-top: 200px;
+        padding-top: 300px;
         margin-left: 0;
-        margin-top: 30px;
+        margin-top: 100px;
         margin-bottom: 40px;
       }
 
       .header-bar {
-        position: absolute;
-        top: 0;
+     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
         width: 100%;
         background-color: #DC1E35;
         display: block;
@@ -120,10 +133,11 @@ input:checked + .slider:before {
 
       .tile {
         border: 1px solid #fff;
-        /* Add border here */
         border-radius: 5px;
         padding: 15px;
         height: auto;
+		min-height: 500px;
+		display: grid;
       }
 
       @media screen and (min-width: 576px) {
@@ -223,13 +237,14 @@ input:checked + .slider:before {
     <div class="header-bar">
       <h1 class="fancy">verkassi</h1>
       <img src="iceland.png" alt="Iceland flag" width="32">
-      <br>/vɛr̥k/ & /ˈkʰasːɪ/ <br>("toolbox") <h3>No ads, no tracking, no signup, no BS.<br>DARK MODE 
-<i class="fa-solid fa-moon"></i>
+      <br>/vɛr̥k/ & /ˈkʰasːɪ/ <br>("toolbox") <h3>No ads, no tracking, no signup, no BS.<br></h3>Need to generate pseudodata? Check out <a href="datasmith.html" target="_blank">DataSmith!</a><br>
 
 <label class="switch">
   <input type="checkbox">
   <span class="slider round"></span>
-</label></h3>
+</label>
+
+</h3>
     </div>
     <div class="row">
       <div class="column">
@@ -285,7 +300,7 @@ input:checked + .slider:before {
                 }
 
                 .result {
-                  margin-top: 10px;
+                  margin-top: -10px;
                   font-weight: bold;
                 }
 
@@ -646,6 +661,7 @@ input:checked + .slider:before {
                 body {
                   background-color: #02529C;
                 }
+				
 
                 body {
                   font-family: open sans, sans-serif;
@@ -664,6 +680,12 @@ input:checked + .slider:before {
                   margin-bottom: 10px;
                   text-align: center;
                 }
+
+ #firstRowAsHeadersCheckbox {
+    margin: 20px; 
+    width: auto;
+  }
+
 
                 .color-input {
                   background-color: white;
@@ -795,12 +817,13 @@ input:checked + .slider:before {
               <style>
                 body {
                   background-color: #02529C;
+				  margin: auto;
                 }
 
                 body {
                   font-family: open sans, sans-serif;
                 }
-
+			
                 /* Style for result label */
                 #converter_result {
                   font-size: 24px;
@@ -808,9 +831,15 @@ input:checked + .slider:before {
                 }
 
                 /* Style for select dropdowns */
-                select {
+input {
+margin: auto;
+margin-bottom: 8px;
+}               
+
+			   select {
                   font-size: 18px;
                   margin-bottom: 8px;
+				  margin: auto;
                 }
               </style>
             
@@ -874,7 +903,7 @@ input:checked + .slider:before {
                 <option value="mile">Mile (mi)</option>
               </select>
               <br>
-              <button id="convertBtn" onclick="convert()">Convert</button>
+              <center><button id="convertBtn" onclick="convert()" style="width: fit-content; height: fit-content;">Convert</button></center>
               <br>
               <label id="converter_result" style="color:white;"></label>
               <script>
@@ -1049,7 +1078,7 @@ function convert() {
     <input type="date" id="date1">
     <label for="date2">Second Date:</label>
     <input type="date" id="date2"><br>
-    <button onclick="calculate()">Calculate</button>
+    <center><button onclick="calculate()" style="width: fit-content; height: fit-content;">Calculate</button></center>
     <div id="result"></div>
     <script>
       function calculate() {
@@ -1225,8 +1254,8 @@ function convert() {
           <body>
             <h1>Lorem Ipsum Generator</h1>
             <h2>Generate up to 5 paragraphs (press button repeatedly).</h2>
-            <button id="generateBtn">Generate</button>
-            <button id="clearBtn" style="display: none;">Clear</button>
+            <center><button id="generateBtn" style="width: fit-content; height: fit-content;">Generate</button>
+            <button id="clearBtn" style="width: fit-content; height: fit-content;">Clear</button></center>
             <div id="text"></div>
             <script>
               const paragraphs = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ante euismod, rhoncus mauris non, facilisis mauris. Praesent in tellus risus. Ut euismod sapien eu tincidunt efficitur.", "Donec sit amet semper velit. Nulla tincidunt luctus porttitor. Nam vitae ante quis ipsum tincidunt sagittis. Suspendisse potenti. In porttitor lectus nibh, ut venenatis purus commodo a. ", "Etiam vestibulum luctus urna eu mollis. Aliquam vitae purus vitae mi efficitur dignissim eu ac risus. Fusce facilisis enim vel faucibus interdum.", "Praesent consequat turpis a risus elementum vestibulum. Quisque vehicula augue et diam suscipit aliquet. Fusce euismod diam vel eros euismod, a lacinia mauris sagittis.", "Curabitur posuere ante non lacus consectetur, at blandit enim vestibulum. Suspendisse ornare urna eu blandit finibus. Maecenas interdum tellus id posuere lacinia."];
@@ -1517,7 +1546,7 @@ function convert() {
             <div id="inputContainer">
               <textarea id="inputTextArea" placeholder="Paste a list of up to 100 values separated by linebreaks or commas"></textarea>
             </div>
-            <button id="selectButton">RANDOMLY SELECT</button>
+            <button id="selectButton" style="width: fit-content; height: fit-content;">Randomly Select</button>
             <div id="selectedValueContainer"></div>
             <script>
               document.getElementById('selectButton').addEventListener('click', function() {
@@ -1562,7 +1591,7 @@ function convert() {
 
       /* Style for the output textarea */
       #outputTextarea {
-        height: 200px;
+        height: 100px;
         white-space: pre;
       }
 
@@ -1614,12 +1643,12 @@ function convert() {
   <body>
     <h1>Spreadsheet to HTML Table Converter</h1>
     <label>
-      <input type="checkbox" id="firstRowAsHeadersCheckbox"> First Row as Headers 
+    <input type="checkbox" id="firstRowAsHeadersCheckbox">First Row as Headers 
     </label>
     <br>
     <textarea id="inputTextarea" rows="10" cols="50"></textarea>
     <br>
-    <button id="convertBtn2">Convert</button>
+    <center><button id="convertBtn2" style="width: fit-content; height: fit-content;">Convert</button></center>
     <textarea id="outputTextarea" rows="10" cols="50"></textarea>
     <table id="tablePreview"></table>
     <script>
@@ -1662,15 +1691,17 @@ function convert() {
                 font-family: open sans, sans-serif;
               }
 
+/* Affect CtLB converter textbox */
               textarea {
                 width: 90%;
-                height: 200px;
+                height: 100px;
                 resize: vertical;
                 margin: auto;
               }
 
               button {
                 margin-top: 10px;
+				margin-bottom: 10px;
               }
             </style>
             <script>
@@ -1721,7 +1752,7 @@ function convert() {
           <body>
             <h1>Word & Character Counter</h1>
             <textarea id="text-input" placeholder="Enter text here"></textarea>
-            <button onclick="countCharsAndWords()">Count</button>
+            <center><button onclick="countCharsAndWords()" style="width: fit-content; height: fit-content;">Count</button></center>
             <p id="char-count"></p>
             <p id="word-count"></p>
           </body>
